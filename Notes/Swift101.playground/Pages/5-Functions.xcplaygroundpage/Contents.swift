@@ -1,6 +1,6 @@
 /*: * Functions
  A surprise is waiting in this matter with argument labels
-*/
+ */
 
 func aFunction() {
     print("I'm a function")
