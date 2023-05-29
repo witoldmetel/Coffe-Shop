@@ -160,4 +160,46 @@ func sum(_ a: Int, _ b: Int) -> Int {
 }
 
 sum(10, 5)
+
+func sum(_ a: Int, with b: Int) -> Int {
+    return a+b
+}
+
+sum(10, with 5)
+```
+
+# Closures
+
+Called literal functions, anonymous functions or lambda expressions on other languages.
+We use the special data type Void to express no return value
+
+```
+var closure: ()->Void = {
+    print("I'm a closure")
+}
+
+IN JAVASCRIPT WE HAVE:
+var closure = function() {}
+
+// Arguments are available on anonymous variables or you can define names within the code block using `in`
+var onSelectedItem: (Int, String)->Void = {
+    print($0, $1)
+}
+
+// Special syntax for functions receiving closures as arguments
+func requestData(callback: (String)->Void) {
+
+}
+
+// How do you call that function?
+requestData(callback: { data in
+
+
+})
+
+OR (if argument is a closure)
+
+requestData { data in
+
+}
 ```
