@@ -203,3 +203,115 @@ requestData { data in
 
 }
 ```
+
+# Custom Types
+
+We have several options to create Custom Types:
+
+- typealias
+- enum
+- protocol
+- class
+- struct
+
+```
+typealias Coordinate = (Int, Int)
+
+enum Language {
+    case Swift
+    case Kotlin
+    case Dart
+    case JavaScript
+}
+```
+
+## Classes
+
+Full support for OOP, not very useful on the SwiftUI side
+Classes can be extended
+
+```
+class Person {
+    var name = ""
+    var age = 0
+}
+
+class Human {
+    var name: String
+
+
+
+    init(withName name: String) {
+        self.name = name
+    }
+
+    func method() {
+
+    }
+}
+
+class Customer: Human {
+
+}
+
+```
+
+## Structs
+
+Data with methods and rules, no inheritance, protocol-based
+Passed by value (copy) but fast and optimized
+There is a default initializer
+
+```
+struct ApiResponse {
+var status: Int
+var data: [String]
+}
+
+struct Human {
+    var name: String
+
+    init(withName name: String) {
+        self.name = name
+    }
+
+    func method() {
+
+    }
+}
+
+var max = Human(name: "wito")
+```
+
+# Protocols
+
+Categorization of custom types
+It can define optional or mandatory methods and properties
+
+```
+protocol Printable {
+func print()
+}
+```
+
+# Error Managements
+
+Exceptions are supported but not widely used in the Apple's frameworks
+
+- do-try-catch
+- try?
+  Some useful expressions:
+- defer
+- guard
+
+```
+do {
+    try functionThatThrows()
+} catch {
+
+}
+
+func functionThatThrows() throws {
+
+}
+```
