@@ -1,2 +1,2 @@
-# Coffe-Shop
-[Training app] Swift / SwiftUI
+# Coffee Shop
+
