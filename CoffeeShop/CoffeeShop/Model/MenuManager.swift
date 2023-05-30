@@ -7,6 +7,6 @@
 
 import Foundation
 
-class MenuManager {
-    
+class MenuManager: ObservableObject {
+    @Published var menu: [Category] = []
 }
