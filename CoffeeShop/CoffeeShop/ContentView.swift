@@ -8,19 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+   
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            EmptyView()
         }
-        .padding()
     }
 }
+
+//struct Greeting: View {
+//    @State var name = "noname"
+//
+//    var body: some View {
+//        VStack {
+//            TextField("Enter name", text: $name)
+//            Text("Hello, \(name)")
+//        }
+//
+//    }
+//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
