@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA16FAAF2A25E38B0068E1D0 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16FAAE2A25E38B0068E1D0 /* Offer.swift */; };
+		EA16FAB12A25EFD30068E1D0 /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16FAB02A25EFD30068E1D0 /* OffersPage.swift */; };
 		EA85D3A52A2521EB00BEB2FC /* CoffeeShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85D3A42A2521EB00BEB2FC /* CoffeeShopApp.swift */; };
 		EA85D3A72A2521EB00BEB2FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85D3A62A2521EB00BEB2FC /* ContentView.swift */; };
 		EA85D3A92A2521ED00BEB2FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA85D3A82A2521ED00BEB2FC /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		EA16FAAE2A25E38B0068E1D0 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		EA16FAB02A25EFD30068E1D0 /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
 		EA85D3A12A2521EB00BEB2FC /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA85D3A42A2521EB00BEB2FC /* CoffeeShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopApp.swift; sourceTree = "<group>"; };
 		EA85D3A62A2521EB00BEB2FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				EA85D3A42A2521EB00BEB2FC /* CoffeeShopApp.swift */,
 				EA85D3A62A2521EB00BEB2FC /* ContentView.swift */,
+				EA16FAB02A25EFD30068E1D0 /* OffersPage.swift */,
 				EA16FAAE2A25E38B0068E1D0 /* Offer.swift */,
 				EA85D3A82A2521ED00BEB2FC /* Assets.xcassets */,
 				EA85D3AA2A2521ED00BEB2FC /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA16FAAF2A25E38B0068E1D0 /* Offer.swift in Sources */,
+				EA16FAB12A25EFD30068E1D0 /* OffersPage.swift in Sources */,
 				EA85D3A72A2521EB00BEB2FC /* ContentView.swift in Sources */,
 				EA85D3A52A2521EB00BEB2FC /* CoffeeShopApp.swift in Sources */,
 			);
