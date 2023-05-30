@@ -13,7 +13,12 @@ struct MenuPage: View {
             {
                 List {
                     ForEach(0 ..< 5) { item in
-                        ProductItem()
+                        NavigationLink {
+                            DetailsPage()
+                        } label: {
+                            ProductItem(product: Product(id: 1, name: "Dummy", price: 4.2))
+                        }
+                    
                     }
                 }.navigationTitle("Products")
             }
