@@ -26,7 +26,7 @@ struct OrdersPage: View {
                                 ForEach(cartManager.products, id:\.0.id) { item in
                                     OrderItem(item: item)
                                 }
-                            }.listRowBackground(Color("Background"))
+                            }.listRowBackground(Color("CardBackground"))
                                                 
                             Section("YOUR DETAILS") {
                                 VStack {
@@ -38,16 +38,16 @@ struct OrdersPage: View {
                                         .textFieldStyle(.roundedBorder)
                                 }.padding(.top)
                                  .padding(.bottom)
-                            }.listRowBackground(Color("Background"))
+                            }.listRowBackground(Color("CardBackground"))
                             
                             Section() {
                                 HStack {
                                     Spacer()
                                     Text("Total")
                                     Spacer()
-//                                    Text("$ \(cartManager.total(), specifier: "%.2f")")
-//                                        .bold()
-//                                    Spacer()
+                                    Text("$ \(cartManager.total(), specifier: "%.2f")")
+                                        .bold()
+                                    Spacer()
                                 }
                             }.listRowBackground(Color.clear)
                             

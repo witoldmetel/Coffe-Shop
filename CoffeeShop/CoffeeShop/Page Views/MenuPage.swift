@@ -25,7 +25,9 @@ struct MenuPage: View {
                             }
                         }
                     }
-                }.navigationTitle("Products")
+                }.navigationTitle("Products").refreshable {
+                    menuManager.refreshItemsFromNetwork()
+                }
             }
     }
 }

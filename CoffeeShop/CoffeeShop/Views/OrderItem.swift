@@ -18,8 +18,12 @@ struct OrderItem: View {
             Text("\(item.0.name)")
             Spacer()
             Text("$ \(Double(item.1)*item.0.price, specifier: "%.2f")")
-            Image(systemName: "trash").font(.title).foregroundColor(Color("Secondary")).padding().onTapGesture {
-                cartManager.remove(product: item.0)
+            Image(systemName: "trash")
+                .font(.title)
+                .foregroundColor(Color("Secondary"))
+                .padding()
+                .onTapGesture {
+                    cartManager.remove(product: item.0)
             }
         }.padding()
     }
