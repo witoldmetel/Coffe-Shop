@@ -1,6 +1,6 @@
 # Coffee Shop
 
-This is training app to get basic knowledge about Swift, SwiftUI and XCode
+This is training app to get basic knowledge about Swift, SwiftUI and XCode. All notes you can find in `Notes` folder together with swift playground
 
 ## Demo
 
