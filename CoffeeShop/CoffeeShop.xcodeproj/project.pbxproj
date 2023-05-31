@@ -23,6 +23,8 @@
 		EA85D3A72A2521EB00BEB2FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85D3A62A2521EB00BEB2FC /* ContentView.swift */; };
 		EA85D3A92A2521ED00BEB2FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA85D3A82A2521ED00BEB2FC /* Assets.xcassets */; };
 		EA85D3AC2A2521ED00BEB2FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA85D3AB2A2521ED00BEB2FC /* Preview Assets.xcassets */; };
+		EAC3FCED2A276E7F00651E0B /* LikesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3FCEC2A276E7F00651E0B /* LikesManager.swift */; };
+		EAC3FCEF2A276EAB00651E0B /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC3FCEE2A276EAB00651E0B /* LikeButton.swift */; };
 		EAFD7AE62A271AF400A144FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EAFD7AE52A271AF400A144FD /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		EA85D3A82A2521ED00BEB2FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA85D3AB2A2521ED00BEB2FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAC3FCEB2A27544600651E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EAC3FCEC2A276E7F00651E0B /* LikesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesManager.swift; sourceTree = "<group>"; };
+		EAC3FCEE2A276EAB00651E0B /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 				EA16FAAE2A25E38B0068E1D0 /* Offer.swift */,
 				EA16FABA2A25F5CB0068E1D0 /* ProductItem.swift */,
 				EA16FAC72A261BC70068E1D0 /* OrderItem.swift */,
+				EAC3FCEE2A276EAB00651E0B /* LikeButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 				EA16FAC12A2600FC0068E1D0 /* Product.swift */,
 				EA16FAC32A2606050068E1D0 /* MenuManager.swift */,
 				EA16FAC52A26061F0068E1D0 /* CartManager.swift */,
+				EAC3FCEC2A276E7F00651E0B /* LikesManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,7 +225,9 @@
 				EA16FAC82A261BC70068E1D0 /* OrderItem.swift in Sources */,
 				EA16FABB2A25F5CB0068E1D0 /* ProductItem.swift in Sources */,
 				EA85D3A72A2521EB00BEB2FC /* ContentView.swift in Sources */,
+				EAC3FCEF2A276EAB00651E0B /* LikeButton.swift in Sources */,
 				EA16FAB72A25F5200068E1D0 /* OrdersPage.swift in Sources */,
+				EAC3FCED2A276E7F00651E0B /* LikesManager.swift in Sources */,
 				EA85D3A52A2521EB00BEB2FC /* CoffeeShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

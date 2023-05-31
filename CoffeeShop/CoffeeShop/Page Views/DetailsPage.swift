@@ -55,6 +55,9 @@ struct DetailsPage: View {
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
 
+            }.navigationTitle(product.name)
+            .toolbar {
+                LikeButton(product: product)
             }
        
     }

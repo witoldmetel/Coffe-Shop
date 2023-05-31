@@ -13,21 +13,21 @@ struct MenuPage: View {
     var body: some View {
         NavigationView
             {
-                List {
-                    ForEach(menuManager.menu) { category in
-                        Text(category.name)
+                    List {
+                        Image("Logo").listRowBackground(Color("Secondary"))
                         
-                        ForEach(category.products) { product in
-                            NavigationLink {
-                                DetailsPage(product: product)
-                            } label: {
-                                ProductItem(product: product)
+                        ForEach(menuManager.menu) { category in
+                            Text(category.name).foregroundColor(Color("Secondary")).bold()
+                            
+                            ForEach(category.products) { product in
+                                NavigationLink(destination: DetailsPage(product: product)) {
+                                        ProductItem(product: product)
+                                    }.listRowSeparator(.hidden)
                             }
-                        }
+                        }.listRowBackground(Color("CardBackground"))
+                    }.navigationTitle("Products").refreshable {
+                        menuManager.refreshItemsFromNetwork()
                     }
-                }.navigationTitle("Products").refreshable {
-                    menuManager.refreshItemsFromNetwork()
-                }
             }
     }
 }
