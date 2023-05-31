@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DetailsPage: View {
+    @EnvironmentObject var cartManager: CartManager
+    
     // It's good practice to keep @State as private
     @State private var quantity = 1
     
@@ -23,6 +25,13 @@ struct DetailsPage: View {
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.leading)
                     .padding(24)
+                if let description = product.description {
+                    Text(description)
+                        .frame(maxWidth: .infinity)
+                        .multilineTextAlignment(.leading)
+                        .padding(24)
+                        .foregroundColor(Color("Primary"))
+                }
                 HStack {
                     Text("$ \(product.price, specifier: "%.2f") ea")
                     Stepper(value: $quantity, in: 1...10) { }
@@ -35,7 +44,7 @@ struct DetailsPage: View {
                     .padding(12)
                 
                 Button("Add \(quantity) to Cart") {
-                    //TODO
+                    cartManager.add(product: product, quantity: quantity)
                 }
                     .padding()
                     .frame(width: 250.0)
@@ -50,6 +59,6 @@ struct DetailsPage: View {
 
 struct DetailsPage_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsPage(product: Product(id: 1, name: "Coffee", price: 2.21))
+        DetailsPage(product: Product(id: 1, name: "Black Coffee", price: 2.21, image: "BlackCoffee")).environmentObject(CartManager())
     }
 }
