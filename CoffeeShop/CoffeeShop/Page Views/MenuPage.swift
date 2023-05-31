@@ -10,6 +10,8 @@ import SwiftUI
 struct MenuPage: View {
     @EnvironmentObject var menuManager: MenuManager
     
+    @State var searchQuery: String = ""
+    
     var body: some View {
         NavigationView
             {
@@ -17,17 +19,29 @@ struct MenuPage: View {
                         Image("Logo").listRowBackground(Color("Secondary"))
                         
                         ForEach(menuManager.menu) { category in
-                            Text(category.name).foregroundColor(Color("Secondary")).bold()
-                            
-                            ForEach(category.products) { product in
-                                NavigationLink(destination: DetailsPage(product: product)) {
-                                        ProductItem(product: product)
-                                    }.listRowSeparator(.hidden)
+                            if category.filteredItems(text: searchQuery).count > 0 {
+                                Text(category.name)
+                                    .listRowBackground(Color("CardBackground"))
+                                    .foregroundColor(Color("Secondary"))
+                                    .bold()
+                                    .padding()
                             }
-                        }.listRowBackground(Color("CardBackground"))
+                            ForEach(category.filteredItems(text: searchQuery)) { item in
+                                ZStack {
+                                    NavigationLink(destination: DetailsPage(product: item)) {
+                                        EmptyView()
+                                    }.opacity(0)
+                                    ProductItem(product: item)
+                                        .padding(.top)
+                                        .padding(.leading)
+                                        .padding(.bottom, 12)
+                                }
+                                
+                            }
+                        }
                     }.navigationTitle("Products").refreshable {
                         menuManager.refreshItemsFromNetwork()
-                    }
+                    }.searchable(text: $searchQuery)
             }
     }
 }

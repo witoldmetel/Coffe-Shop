@@ -28,7 +28,7 @@ struct ProductItem: View {
                         LikeButton(product: product)
                     }
                 }
-                .background(Color("SurfaceBackground"))
+                .background(Color("CardBackground"))
                 .cornerRadius(10)
                 .padding(.trailing)
             }
