@@ -10,6 +10,8 @@ import SwiftUI
 struct DetailsPage: View {
     @EnvironmentObject var cartManager: CartManager
     
+    @Environment(\.dismiss) var dismiss
+    
     // It's good practice to keep @State as private
     @State private var quantity = 1
     
@@ -45,6 +47,7 @@ struct DetailsPage: View {
                 
                 Button("Add \(quantity) to Cart") {
                     cartManager.add(product: product, quantity: quantity)
+                    dismiss()
                 }
                     .padding()
                     .frame(width: 250.0)
