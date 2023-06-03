@@ -4,7 +4,7 @@ This is training app to get basic knowledge about Swift, SwiftUI and XCode. All 
 
 | Android                                                                          | Flutter                                                                          | React Native                                                                            | 
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| ![Repository](https://github.com/witoldmetel/Coffee-Shop-Android) | ![Repository](https://img.shields.io/badge/Coverage-0%25-red.svg 'Make me better!') | ![Repository](https://img.shields.io/badge/Coverage-0%25-red.svg 'Make me better!') | 
+| [Repository](https://github.com/witoldmetel/Coffee-Shop-Android) | [Repository](https://img.shields.io/badge/Coverage-0%25-red.svg 'Make me better!') | [Repository](https://img.shields.io/badge/Coverage-0%25-red.svg 'Make me better!') | 
 
 ## Demo
 
